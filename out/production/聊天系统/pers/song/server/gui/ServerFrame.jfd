@@ -1,0 +1,143 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 850, 740 )
+			"title": "微薪服务器"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/pers/song/resource/WeChat.png" )
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "thisWindowClosing", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "connectLabel"
+				"text": "当前连接客户端数量："
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 270
+				"width": 205
+				"height": 45
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "connectNumberLabel"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+				"text": "0"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 230
+				"y": 280
+				"width": 105
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "messagePanel"
+				"horizontalScrollBarPolicy": 31
+				"verticalScrollBarPolicy": 22
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "messageContent"
+					"editable": false
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 375
+				"width": 845
+				"height": 330
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "userPanel"
+				"horizontalScrollBarPolicy": 31
+				"verticalScrollBarPolicy": 22
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "userTable"
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+					"rowHeight": 30
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 365
+				"y": 40
+				"width": 475
+				"height": 330
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "currentUser"
+				"text": "当前连接用户"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 535
+				"y": 5
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "messageLabel"
+				"text": "日志记录"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 35
+				"y": 340
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "portLabel"
+				"text": "端口号3060已关闭"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 195
+				"width": 260
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "startButton"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/pers/song/resource/Start_Button.png" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 15
+				"height": 128
+				"width": 128
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "stateLabel"
+				"text": "服务器等待启动"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 155
+				"width": 230
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "closeButton"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/pers/song/resource/Stop_Button.png" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "closeButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 200
+				"y": 15
+				"height": 128
+				"width": 128
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "clearButton"
+				"text": "清空内容"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clearButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 150
+				"y": 335
+				"width": 175
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ipLabel"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+				"text": "服务器未启动"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 235
+				"width": 315
+				"height": 35
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 285, 105 )
+			"size": new java.awt.Dimension( 850, 740 )
+		} )
+	}
+}

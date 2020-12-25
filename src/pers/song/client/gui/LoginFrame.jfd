@@ -1,0 +1,180 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 390, 440 )
+			"title": "微薪"
+			"background": new java.awt.Color( 204, 204, 204, 255 )
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/pers/song/resource/WeChat.png" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "mainPanel"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 160
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "titleLabel"
+				"text": "微薪"
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "微软雅黑", 0, 48 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 125
+				"y": 25
+				"width": 215
+				"height": 50
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "userNameLabel"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/pers/song/resource/UserIcon.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 105
+				"width": 32
+				"height": 32
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "passwordLabel"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/pers/song/resource/LockIcon.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 175
+				"width": 32
+				"height": 32
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ipLabel"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/pers/song/resource/IP.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 245
+				"height": 32
+				"width": 32
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "copyrightLabel"
+				"text": "Copyright © 2020-2023 Nathan Song"
+				"font": new java.awt.Font( "Serif", 0, 10 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 225
+				"y": 390
+				"width": 155
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userNameBox"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 80
+				"y": 105
+				"height": 40
+				"width": 290
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordBox"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 80
+				"y": 175
+				"height": 40
+				"width": 290
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "loginButton"
+				"font": new java.awt.Font( "微软雅黑", 0, 26 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/pers/song/resource/Button_Default.png" )
+				"selectedIcon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 135
+				"y": 310
+				"width": 115
+				"height": 50
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "IconLabel"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/pers/song/resource/WeChat_Min.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 90
+				"y": 15
+				"width": 70
+				"height": 70
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ipBox_1"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 80
+				"y": 240
+				"height": 40
+				"width": 65
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ipBox_2"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 155
+				"y": 240
+				"height": 40
+				"width": 65
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ipBox_3"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 230
+				"y": 240
+				"height": 40
+				"width": 65
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ipBox_4"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 305
+				"y": 240
+				"height": 40
+				"width": 65
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "dotLabel_1"
+				"text": "."
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 48 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 225
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "dotLabel_2"
+				"text": "."
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 48 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 220
+				"y": 225
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "dotLabel_3"
+				"text": "."
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 48 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 295
+				"y": 225
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "connectingLabel"
+				"text": "正在连接..."
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 100
+				"y": 305
+				"width": 205
+				"height": 65
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 655, 235 )
+			"size": new java.awt.Dimension( 390, 440 )
+		} )
+	}
+}
